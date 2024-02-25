@@ -142,6 +142,12 @@
             transition: .25s padding ease-in-out, .25s box-shadow ease-in-out .25s;
         }
     }
+    .islog{
+        width: 325px;
+        margin: 0 50px;
+        display: flex;
+        justify-content: flex-start;
+    }
     .logo{
         width: 175px;
         position: relative;

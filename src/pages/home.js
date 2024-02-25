@@ -69,11 +69,13 @@ const Home = () => {
                         </div>
                         <p>Lokobe</p>
                     </div>
-                    <div class="logo">
-                        <h2 class="vacances">vacances</h2>
-                        <h2 class="tour">nosy-be tour</h2>
-                        <div class="container">
-                            <img src={logo} alt=""/>
+                    <div className="islog">
+                        <div class="logo">
+                            <h2 class="vacances">vacances</h2>
+                            <h2 class="tour">nosy-be tour</h2>
+                            <div class="container">
+                                <img src={logo} alt=""/>
+                            </div>
                         </div>
                     </div>
                 </div>

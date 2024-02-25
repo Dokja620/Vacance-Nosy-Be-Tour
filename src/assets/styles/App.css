@@ -309,6 +309,12 @@ nav ul li:hover::after {
   box-shadow: rgba(255, 255, 255, 0.655) 0px 4px 0px;
   transition: 0.25s padding ease-in-out, 0.25s box-shadow ease-in-out 0.25s;
 }
+#second .islog {
+  width: 325px;
+  margin: 0 50px;
+  display: flex;
+  justify-content: flex-start;
+}
 #second .logo {
   width: 175px;
   position: relative;
