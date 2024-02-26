@@ -96,14 +96,14 @@ const Home = () => {
                 <h1 class="ii">Au  programme :</h1>
                 <div class="programme">
                     <div class="illustration">
-                        <div class="another">
-                            <div class="contain">
+                        <div class="another lemu">
+                            <div class="contain lemu">
                                 <img src={lemuria} alt=""/>
                             </div>
                             <h1>Lemuria <br/> land</h1>
                         </div>
                     </div>
-                    <div class="infos">
+                    <div class="infos lemu">
                         <p>
                             Ce qui fait la béauté ce parc c’est les différentes types de lémuriens qu’on y retrouve, mais il y’a aussi des poissons, crocodiles, oiseaux, serpents, caméléons et tortues.
                                 <br/> <br/>
@@ -113,14 +113,14 @@ const Home = () => {
                 </div>
                 <div class="programme">
                     <div class="illustration">
-                        <div class="another">
-                            <div class="contain">
+                        <div class="another vil">
+                            <div class="contain vil">
                                 <img src={hell} alt=""/>
                             </div>
                             <h1>Hell-ville</h1>
                         </div>
                     </div>
-                    <div class="infos">
+                    <div class="infos vil">
                         <p>
                             Se trouvant dans le Sud de Nosy Be, Hell-Ville est la capitale de cet archipel. Elle est une ville portuaire. Avec ses vieux canons, le port est un des endroits qui donnent à la ville son charme.
                             <br/> <br/>
@@ -130,14 +130,14 @@ const Home = () => {
                 </div>
                 <div class="programme">
                     <div class="illustration">
-                        <div class="another">
-                            <div class="contain">
+                        <div class="another arb">
+                            <div class="contain arb">
                                 <img src={sacre} alt=""/>
                             </div>
                             <h1>Arbre sacré</h1>
                         </div>
                     </div>
-                    <div class="infos">
+                    <div class="infos arb">
                         <p>
                             Un tour dans le marché couvert construit à l’époque coloniale est obligatoire pour admirer cette population et pour profite des épices et des produits artisanaux tesl que des  matériaux de cuisines en bois et en pierre sculptés à la main.    
                         </p>
@@ -145,14 +145,14 @@ const Home = () => {
                 </div>
                 <div class="programme">
                     <div class="illustration">
-                        <div class="another">
-                            <div class="contain">
+                        <div class="another andi">
+                            <div class="contain andi">
                                 <img src={andilana} alt=""/>
                             </div>
                             <h1>Andilana</h1>
                         </div>
                     </div>
-                    <div class="infos">
+                    <div class="infos andi">
                         <p>
                             Avec son calme et sa beauté, la plage d’Andilana est excellente pour un farniente. Vous pouvez admirez la beauté de l’art nosybéen : peinture sur tableaux
                         </p>
@@ -160,14 +160,14 @@ const Home = () => {
                 </div>
                 <div class="programme">
                     <div class="illustration">
-                        <div class="another">
-                            <div class="contain">
+                        <div class="another mnt">
+                            <div class="contain mnt">
                                 <img src={passot} alt=""/>
                             </div>
                             <h1>Mont Passot</h1>
                         </div>
                     </div>
-                    <div class="infos">
+                    <div class="infos mnt">
                         <p>
                             300 mètres d’altitude,  avec un vu de 360 degrés. Une superbe vue panoramique  et magnifique coucher de soleil. 
                         </p>

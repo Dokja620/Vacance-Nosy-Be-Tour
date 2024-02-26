@@ -359,9 +359,11 @@ nav ul li:hover::after {
 #third .programme {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 15px;
   position: relative;
   margin: 50px 0;
+  transform: translateX(-20%);
 }
 #third .programme .illustration {
   display: flex;
@@ -371,6 +373,11 @@ nav ul li:hover::after {
   position: relative;
   width: max-content;
   height: max-content;
+  /*first custom size prog logo*/
+  /*second custom size prog logo*/
+  /*third custom size prog logo*/
+  /*fourth custom size prog logo*/
+  /*fifth custom size prog logo*/
 }
 #third .programme .illustration .another h1 {
   position: absolute;
@@ -379,6 +386,36 @@ nav ul li:hover::after {
   transform: translateX(50%);
   font-size: 1.7em;
 }
+#third .programme .illustration .another.lemu {
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  transform: translateY(-50%);
+}
+#third .programme .illustration .another.vil {
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  transform: translateY(-50%);
+}
+#third .programme .illustration .another.arb {
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  transform: translateY(-50%);
+}
+#third .programme .illustration .another.andi {
+  position: absolute;
+  top: 60%;
+  left: 41%;
+  transform: translateY(-50%);
+}
+#third .programme .illustration .another.mnt {
+  position: absolute;
+  top: 65%;
+  left: 38%;
+  transform: translateY(-50%);
+}
 #third .programme .illustration .contain {
   border: 7px solid #fff;
   border-radius: 50%;
@@ -386,16 +423,72 @@ nav ul li:hover::after {
   overflow: hidden;
   height: 200px;
   position: relative;
+  /*first custom size prog img*/
+  /*second custom size prog img*/
+  /*third custom size prog img*/
+  /*fourth custom size prog img*/
+  /*fifth custom size prog img*/
 }
 #third .programme .illustration .contain img {
   height: 100%;
 }
+#third .programme .illustration .contain.lemu {
+  width: 250px;
+  height: 250px;
+}
+#third .programme .illustration .contain.vil {
+  width: 250px;
+  height: 250px;
+}
+#third .programme .illustration .contain.arb {
+  width: 250px;
+  height: 250px;
+}
+#third .programme .illustration .contain.andi {
+  width: 200px;
+  height: 200px;
+}
+#third .programme .illustration .contain.mnt {
+  width: 175px;
+  height: 175px;
+}
 #third .programme .infos {
   background-color: #fff;
-  margin: 5% 0;
+  margin: 25px;
   padding: 15px;
   border-radius: 25px;
   text-align: justify;
+  /*first custom size prog info*/
+  /*second custom size prog info*/
+  /*third custom size prog info*/
+  /*fourth custom size prog info*/
+  /*fifth custom size prog info*/
+}
+#third .programme .infos.lemu {
+  padding-left: 75px;
+  width: 50%;
+}
+#third .programme .infos.vil {
+  margin-right: 10%;
+  padding-left: 75px;
+  width: 50%;
+}
+#third .programme .infos.arb {
+  margin-right: 15%;
+  padding-left: 75px;
+  width: 30%;
+}
+#third .programme .infos.andi {
+  margin-top: 75px;
+  margin-right: 20%;
+  padding-left: 75px;
+  width: 30%;
+}
+#third .programme .infos.mnt {
+  margin-top: 75px;
+  margin-right: 25%;
+  padding-left: 75px;
+  width: 30%;
 }
 #third .programme p {
   font-size: 1em;

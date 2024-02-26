@@ -194,9 +194,11 @@
     .programme{
         display: flex;
         align-items: center;
+        justify-content: flex-end;
         gap: 15px;
         position: relative;
         margin: 50px 0;
+        transform: translateX(-20%);
         .illustration{
             display: flex;
             justify-content: center;
@@ -211,6 +213,41 @@
                     transform: translateX(50%);
                     font-size: 1.7em;
                 }
+                /*first custom size prog logo*/
+                &.lemu{
+                    position: absolute;
+                    top: 50%;
+                    left: 37%;
+                    transform: translateY(-50%);
+                }
+                /*second custom size prog logo*/
+                &.vil{
+                    position: absolute;
+                    top: 50%;
+                    left: 28%;
+                    transform: translateY(-50%);
+                }
+                /*third custom size prog logo*/
+                &.arb{
+                    position: absolute;
+                    top: 50%;
+                    left: 43%;
+                    transform: translateY(-50%);
+                }
+                /*fourth custom size prog logo*/
+                &.andi{
+                    position: absolute;
+                    top: 60%;
+                    left: 41%;
+                    transform: translateY(-50%);
+                }
+                /*fifth custom size prog logo*/
+                &.mnt{
+                    position: absolute;
+                    top: 65%;
+                    left: 38%;
+                    transform: translateY(-50%);
+                }
             }
             .contain{
                 border: 7px solid #fff;
@@ -222,14 +259,70 @@
                 img{
                     height: 100%;
                 }
+                /*first custom size prog img*/
+                &.lemu{
+                    width: 250px;
+                    height: 250px;
+                }
+                /*second custom size prog img*/
+                &.vil{
+                    width: 250px;
+                    height: 250px;
+                }
+                /*third custom size prog img*/
+                &.arb{
+                    width: 250px;
+                    height: 250px;
+                }
+                /*fourth custom size prog img*/
+                &.andi{
+                    width: 200px;
+                    height: 200px;
+                }
+                /*fifth custom size prog img*/
+                &.mnt{
+                    width: 175px;
+                    height: 175px;
+                }
             }
         }
         .infos{
             background-color: #fff;
-            margin: 5% 0;
+            margin: 25px;
             padding: 15px;
             border-radius: 25px;
             text-align: justify;
+            /*first custom size prog info*/
+            &.lemu{
+                padding-left: 75px;
+                width: 50%;
+            }
+            /*second custom size prog info*/
+            &.vil{
+                margin-right: 10%;
+                padding-left: 75px;
+                width: 50%;
+            }
+            /*third custom size prog info*/
+            &.arb{
+                margin-right: 15%;
+                padding-left: 75px;
+                width: 30%;
+            }
+            /*fourth custom size prog info*/
+            &.andi{
+                margin-top: 75px;
+                margin-right: 20%;
+                padding-left: 75px;
+                width: 30%;
+            }
+            /*fifth custom size prog info*/
+            &.mnt{
+                margin-top: 75px;
+                margin-right: 25%;
+                padding-left: 75px;
+                width: 30%;
+            }
         }
         p{
             font-size: 1em;
