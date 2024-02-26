@@ -1,0 +1,69 @@
+import tsingy from '../assets/imgs/circuit/Tsingy_Rouges_Madagascar.jpg';
+import mer from '../assets/imgs/circuit/mer-emeraude-diego-suarez-madagascar.jpg';
+import ambre from '../assets/imgs/circuit/montagme-d-ambre.jpg';
+import parc from '../assets/imgs/circuit/Ankarana_three.jpg';
+import hara from '../assets/imgs/circuit/nosy-hara.jpg';
+import cacao from '../assets/imgs/circuit/cacao.jpg';
+
+const Circuit = () => {
+    return ( 
+        <section id="circuit">
+            <h1>Circuit Nord</h1>
+            <h2>Découvrez toutes les beautés de la région de diego suarez au nord de madagascar.</h2>
+            <div className="places">
+                <div className="boite">
+                    <h3>Tsingy rouge</h3>
+                    <div className="filter"></div>
+                    <div>
+                        <img src={tsingy} alt="" />
+                    </div>
+                </div>
+
+                <div className="boite">
+                    <h3>mer d'émeraude</h3>
+                    <div className="filter"></div>
+                    <div>
+                        <img src={mer} alt="" />
+                    </div>
+                </div>
+                
+                <div className="boite">
+                    <h3>montagne d'ambre</h3>
+                    <div className="filter"></div>
+                    <div>
+                        <img src={ambre} alt="" />
+                    </div>
+                </div>
+
+                <div className="boite">
+                    <h3>Parc Ankarana</h3>
+                    <div className="filter"></div>
+                    <div>
+                        <img src={parc} alt="" />
+                    </div>
+                </div>
+
+                <div className="boite">
+                    <h3>Nosy Hara</h3>
+                    <div className="filter"></div>
+                    <div>
+                        <img src={hara} alt="" />
+                    </div>
+                </div>
+
+                <div className="boite">
+                    <h3>Plantation cacao</h3>
+                    <div className="filter"></div>
+                    <div>
+                        <img src={cacao} alt="" />
+                    </div>
+                </div>
+            </div>
+            <div className="reserve">
+                Réserver
+            </div>
+        </section>
+     );
+}
+ 
+export default Circuit;

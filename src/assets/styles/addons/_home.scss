@@ -180,7 +180,120 @@
     }
 }
 
-#three{
+#third{
+    margin-top: 15%;
+    h1{
+        text-align: center;
+        &.oo{
+            font-size: 2.3em;
+        }
+        &.ii{
+            font-size: 1.7em;
+        }
+    }
+    .programme{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        position: relative;
+        margin: 50px 0;
+        .illustration{
+            display: flex;
+            justify-content: center;
+            .another{
+                position: relative;
+                width: max-content;
+                height: max-content;
+                h1{
+                    position: absolute;
+                    bottom: 0;
+                    right: 50%;
+                    transform: translateX(50%);
+                    font-size: 1.7em;
+                }
+            }
+            .contain{
+                border: 7px solid #fff;
+                border-radius: 50%;
+                width: 200px;
+                overflow: hidden;
+                height: 200px;
+                position: relative;
+                img{
+                    height: 100%;
+                }
+            }
+        }
+        .infos{
+            background-color: #fff;
+            margin: 5% 0;
+            padding: 15px;
+            border-radius: 25px;
+            text-align: justify;
+        }
+        p{
+            font-size: 1em;
+            color: #2ac1f1;
+            text-shadow: none;
+        }
+    }
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        padding: 0 15px;
+        .same{
+            border-radius: 25px;
+            border: 5px solid #2ac1f1;
+            min-height: 71px;
+            position: relative;
+            width: max-content;
+            max-width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: .7em 1em;
+            margin: 20px 0;
+            &.top{
+                order: -1;
+            }
+            h2{
+                position: absolute;
+                top: -17px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-family: '80 peta';
+                letter-spacing: 1px;
+                font-size: 2em;
+                color: #2ac1f1;
+            }
+            p{
+                color: #fff;
+                text-shadow: #000 1px 1px 2px;
+            }
+        }
+    }
+    .reserve{
+        background: #2ac1f1;
+        border-radius: 30px;
+        border: 3px solid #fff;
+        padding: .5em 2em;
+        width: max-content;
+        margin: 25px auto;
+        font-family: 'lato';
+        text-transform: uppercase;
+        font-size: 1.2em;
+        letter-spacing: 2px;
+        color: #fff;
+        text-shadow: #000 1px 1px 3px;
+        box-shadow: #2ac3f1b7 0px 5px 0px;
+        cursor: pointer;
+    }
+}
+
+#fourth{
     margin-top: 150px;
     .about{
         display: flex;
