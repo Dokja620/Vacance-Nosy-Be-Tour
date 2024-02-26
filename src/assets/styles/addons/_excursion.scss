@@ -1,0 +1,166 @@
+#island{
+    margin-top: 75px;
+    h1{
+        font-family: '80 peta';
+        font-size: 2em;
+        letter-spacing: 5px;
+        text-align: center;
+        text-shadow: #000 2px 2px 0px, #07070765 4px 4px 0px;
+    }
+    .switch{
+        text-align: center;
+        button{
+            font-family: 'oswald';
+            color: #fffffff5;
+            position: relative;
+            transition: .3s all ease-in-out;
+            background: none;
+            border: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            text-shadow: #000 0px 0px 2px, #000 0px 0px 4px;
+            &:hover{
+                color: #ffffffbe;
+                text-shadow: #ffffff91 0px 0px 1px;
+                letter-spacing: 2px;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+                background: transparent;
+                backdrop-filter: blur(2px);
+                &::before{
+                    width: 75%;
+                }
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 3px;
+                width: 0%;
+                transform-origin: center;
+                background: #ffffffdc;
+                box-shadow: #fffffff5 0px 0px 1px, #fffffff5 0px 0px 3px, #fffffff5 0px 0px 5px;
+                transition: .3s all ease-in-out;
+            }
+        }
+    }
+}
+
+.trip{
+    display: flex;
+    justify-content: center;
+    min-height: 600px;
+    h2{
+        font-family: '80 peta';
+        font-size: 1.6em;
+        letter-spacing: 3px;
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        width: max-content;
+        transform: translateX(-50%);
+        &.in{
+            top: -25px;
+        }
+    }
+    p{
+        font-family: 'montserrat';
+        color: #2ac1f1;
+        text-shadow: none;
+        font-weight: 600;
+        font-size: 1em;
+    }
+    .left, .right{
+        width: 25%;
+        margin: 25px 0;
+        .desc{
+            min-height: 300px;
+        }
+        div{
+            background: #fff;
+            border-radius: 25px;
+            margin: 15px 10px;
+            &.box{
+                padding: 25px;
+                position: relative;
+            }
+            .div{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                margin: 5px 0;
+            }
+        }
+    }
+    span{
+        img{
+            width: 25px;
+        }
+    }
+    .left{
+        order: 2;
+    }
+    .right{
+        order: 3;
+    }
+    .middle{
+        align-self: center;
+        position: relative;
+        order: 2;
+        margin: 25px 0;
+        h3{
+            font-family: '80 peta';
+            text-transform: uppercase;
+            font-size: 3em;
+            letter-spacing: 5px;
+            width: max-content;
+            text-shadow: #000 2px 2px 0px, #07070765 5px 5px 0px;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .view{
+            width: 40vw;
+            height: 325px;
+            border-radius: 25px;
+            border: 5px solid #fff;
+            overflow: hidden;
+            img{
+                min-height: 100%;
+                width: 40vw;
+            }
+        }
+        .arrow{
+            width: 55px;
+            position: absolute;
+            right: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            &.lft{
+                transform: rotate(-180deg);
+                top: 35%;
+                left: -25px;
+            }
+            img{
+                width: 100%;
+                opacity: .5;
+            }
+        }
+        .booking{
+            background: #fff;
+            width: max-content;
+            padding: 1em 1.5em;
+            border-radius: 25px;
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: #ffffff69 0px 6px 0px;
+            cursor: pointer;
+        }
+    }
+}

@@ -6,6 +6,9 @@
     text-decoration: none;
     box-sizing: border-box;
     text-transform: uppercase;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -81,5 +84,6 @@ h1,h2,a,p{
 @import "addons/circuit";
 @import "addons/store";
 @import "addons/reservation-hotel";
+@import "addons/excursion";
 @import "addons/animation";
 @import "addons/footer";

@@ -5,6 +5,7 @@ import Popup from './popup/popup';
 const ContactUs = () => {
   const form = useRef();
   const [showPopup, setShowPopup] = useState(false);
+  const [tripPrice, setTripPrice] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -29,24 +30,53 @@ const ContactUs = () => {
     setShowPopup(false);
   };
 
+  const handleIslandChange = (e) => {
+    const selectedIsland = e.target.value;
+    let priceString = '';
+    // Set the trip price based on the selected island
+    switch (selectedIsland) {
+      case 'Circuit Nord':
+        priceString = '120€ par personne';
+        break;
+      case 'Tour de Nosy be':
+        priceString = '60€ par personne';
+        break;
+      case 'Nosy komba':
+        priceString = '50€ | 45€(+05 pers)';
+        break;
+      case 'Nosy Tanikely':
+        priceString = '50€ | 45€(+05 pers)';
+        break;
+      case 'Nosy Iranja':
+        priceString = '50€ | 45€(+05 pers)';
+        break;
+      case 'Nosy Sakatia':
+        priceString = '30€ par personne';
+        break;
+      case 'Lokobe':
+        priceString = '45€ par personne';
+        break;
+      default:
+        priceString = '';
+    }
+
+    setTripPrice(priceString);
+  };
+
   return (
     <section id="reservation">
       <h1>Réservez votre place!</h1>
       <form ref={form} onSubmit={sendEmail}>
         <h2>Vos informations</h2>
         <span className='user-name'>
-          <label>Noms:</label>
           <input type="text" name="client_last_name" placeholder='Nom' required/>
-          <label>Prénoms:</label>
           <input type="text" name="client_first_name" placeholder='Prénoms' required/>
         </span>
         <span className='user-contact'>
           <div>
-            <label>email:</label>
             <input type="email" name="client_email" placeholder='email'/>
           </div>
           <div>
-            <label>numéros:</label>
             <input type="text" name="client_phone" placeholder='numéros' required/>
           </div>
         </span>
@@ -73,16 +103,20 @@ const ContactUs = () => {
           </div>
           <div>
             <label>Îles à visiter:</label>
-            <select name="island_choice" id="island" required>
+            <select name="island_choice" id="islands" required onChange={handleIslandChange}>
               <option value="">Faites votre choix</option>
-              <option value="island1">Circuit Nord</option>
-              <option value="island2">Tour de Ville</option>
-              <option value="island3">Nosy Komba</option>
-              <option value="island4">Nosy Tanikely</option>
-              <option value="island5">Nosy Iranja</option>
-              <option value="island6">Sakatia</option>
-              <option value="island7">Lokobe</option>
+              <option value="Circuit Nord">Circuit Nord</option>
+              <option value="Tour de Nosy be">Tour de l'Îles</option>
+              <option value="Nosy komba">Nosy Komba</option>
+              <option value="Nosy Tanikely">Nosy Tanikely</option>
+              <option value="Nosy Iranja">Nosy Iranja</option>
+              <option value="Nosy Sakatia">Nosy Sakatia</option>
+              <option value="Lokobe">Lokobe</option>
             </select>
+          </div>
+          <div>
+            <label>Prix:</label>
+            <input type="text" name="trip_price" value={tripPrice} placeholder='00€' readOnly />
           </div>
         </span>
         <input type="submit" value="Réserver" />

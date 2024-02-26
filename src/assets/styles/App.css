@@ -6,6 +6,9 @@
   text-decoration: none;
   box-sizing: border-box;
   text-transform: uppercase;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -309,6 +312,9 @@ nav ul li:hover::after {
   box-shadow: rgba(255, 255, 255, 0.655) 0px 4px 0px;
   transition: 0.25s padding ease-in-out, 0.25s box-shadow ease-in-out 0.25s;
 }
+#second .island .nav-link {
+  color: rgba(42, 195, 241, 0.7176470588);
+}
 #second .islog {
   width: 325px;
   margin: 0 50px;
@@ -346,6 +352,7 @@ nav ul li:hover::after {
 
 #third {
   margin-top: 15%;
+  position: relative;
 }
 #third h1 {
   text-align: center;
@@ -552,6 +559,14 @@ nav ul li:hover::after {
 
 #fourth {
   margin-top: 150px;
+  position: absolute;
+  bottom: 50px;
+  right: 35px;
+  width: 30vw;
+  background: #fff;
+  box-shadow: #000 0px 0px 10px;
+  backdrop-filter: blur(5px);
+  border-radius: 25px;
 }
 #fourth .about {
   display: flex;
@@ -585,8 +600,7 @@ nav ul li:hover::after {
   color: #2ac1f1;
 }
 #fourth .about .same p {
-  color: #fff;
-  text-shadow: #000 1px 1px 10px, #000 1px 1px 5px, #000 1px 1px 7px;
+  color: rgba(42, 195, 241, 0.7176470588);
 }
 #fourth .reserve {
   background: #2ac1f1;
@@ -800,7 +814,7 @@ form {
   color: #2ac1f1;
   padding: 25px;
   border-radius: 7px;
-  width: 50%;
+  width: 45%;
 }
 form h2 {
   margin: 15px 0 5px 0;
@@ -826,7 +840,9 @@ form input:focus, form select:focus {
 form input[type=submit] {
   font-family: "oswald";
   font-size: 1.2em;
-  padding: 5px 0;
+  padding: 5px 2em;
+  margin: 15px auto 0 auto;
+  width: max-content;
   color: #2ac1f1;
   cursor: pointer;
   transition: 0.5s all ease-in-out;
@@ -834,6 +850,22 @@ form input[type=submit] {
 form input[type=submit]:hover {
   color: #fff;
   background-color: #2ac1f1;
+}
+form input[type=checkbox] {
+  /* ...existing styles */
+  display: grid;
+  place-content: center;
+}
+form input[type=checkbox]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+form input[type=checkbox]:checked::before {
+  transform: scale(1);
 }
 form .user-name input {
   width: 100%;
@@ -866,6 +898,60 @@ form .excursion {
 form .excursion div {
   display: flex;
   flex-direction: column;
+}
+form .prixx {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+form .prixx div {
+  display: flex;
+  flex-direction: column;
+}
+form .prixx div input {
+  border: none;
+  border-bottom: 3px solid #e5e5e5;
+  font-weight: 600;
+  font-size: 1em;
+  letter-spacing: 1px;
+  padding: 0.5em;
+}
+form .validation {
+  display: flex;
+  gap: 15px;
+}
+form .validation div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+form .validation div label {
+  color: #929090;
+  text-shadow: none;
+  font-family: "montserrat";
+  font-size: 1em;
+}
+form .validation div input[type=radio] {
+  height: 15px;
+  width: 15px;
+  border: 2px solid #929090;
+  padding: 5px;
+  position: relative;
+}
+form .validation div input[type=radio]:checked::before {
+  filter: blur(0px);
+  opacity: 1;
+}
+form .validation div input[type=radio]::before {
+  content: "";
+  filter: blur(2px);
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #2ac1f1;
+  box-shadow: #000 0px 0px 2px, inset #000 0px 0px 3px;
+  border-radius: 50%;
 }
 
 .popup {
@@ -902,6 +988,172 @@ form .excursion div {
   cursor: pointer;
 }
 
+#island {
+  margin-top: 75px;
+}
+#island h1 {
+  font-family: "80 peta";
+  font-size: 2em;
+  letter-spacing: 5px;
+  text-align: center;
+  text-shadow: #000 2px 2px 0px, rgba(7, 7, 7, 0.3960784314) 4px 4px 0px;
+}
+#island .switch {
+  text-align: center;
+}
+#island .switch button {
+  font-family: "oswald";
+  color: rgba(255, 255, 255, 0.9607843137);
+  position: relative;
+  transition: 0.3s all ease-in-out;
+  background: none;
+  border: none;
+  margin: 0 15px;
+  font-size: 1.2em;
+  text-shadow: #000 0px 0px 2px, #000 0px 0px 4px;
+}
+#island .switch button:hover {
+  color: rgba(255, 255, 255, 0.7450980392);
+  text-shadow: rgba(255, 255, 255, 0.568627451) 0px 0px 1px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background: transparent;
+  backdrop-filter: blur(2px);
+}
+#island .switch button:hover::before {
+  width: 75%;
+}
+#island .switch button::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 0%;
+  transform-origin: center;
+  background: rgba(255, 255, 255, 0.862745098);
+  box-shadow: rgba(255, 255, 255, 0.9607843137) 0px 0px 1px, rgba(255, 255, 255, 0.9607843137) 0px 0px 3px, rgba(255, 255, 255, 0.9607843137) 0px 0px 5px;
+  transition: 0.3s all ease-in-out;
+}
+
+.trip {
+  display: flex;
+  justify-content: center;
+  min-height: 600px;
+}
+.trip h2 {
+  font-family: "80 peta";
+  font-size: 1.6em;
+  letter-spacing: 3px;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: max-content;
+  transform: translateX(-50%);
+}
+.trip h2.in {
+  top: -25px;
+}
+.trip p {
+  font-family: "montserrat";
+  color: #2ac1f1;
+  text-shadow: none;
+  font-weight: 600;
+  font-size: 1em;
+}
+.trip .left, .trip .right {
+  width: 25%;
+  margin: 25px 0;
+}
+.trip .left .desc, .trip .right .desc {
+  min-height: 300px;
+}
+.trip .left div, .trip .right div {
+  background: #fff;
+  border-radius: 25px;
+  margin: 15px 10px;
+}
+.trip .left div.box, .trip .right div.box {
+  padding: 25px;
+  position: relative;
+}
+.trip .left div .div, .trip .right div .div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 5px 0;
+}
+.trip span img {
+  width: 25px;
+}
+.trip .left {
+  order: 2;
+}
+.trip .right {
+  order: 3;
+}
+.trip .middle {
+  align-self: center;
+  position: relative;
+  order: 2;
+  margin: 25px 0;
+}
+.trip .middle h3 {
+  font-family: "80 peta";
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 5px;
+  width: max-content;
+  text-shadow: #000 2px 2px 0px, rgba(7, 7, 7, 0.3960784314) 5px 5px 0px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.trip .middle .view {
+  width: 40vw;
+  height: 325px;
+  border-radius: 25px;
+  border: 5px solid #fff;
+  overflow: hidden;
+}
+.trip .middle .view img {
+  min-height: 100%;
+  width: 40vw;
+}
+.trip .middle .arrow {
+  width: 55px;
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.trip .middle .arrow.lft {
+  transform: rotate(-180deg);
+  top: 35%;
+  left: -25px;
+}
+.trip .middle .arrow img {
+  width: 100%;
+  opacity: 0.5;
+}
+.trip .middle .booking {
+  background: #fff;
+  width: max-content;
+  padding: 1em 1.5em;
+  border-radius: 25px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: rgba(255, 255, 255, 0.4117647059) 0px 6px 0px;
+  cursor: pointer;
+}
+
+/*Poppup animation*/
 .popup {
   animation: fadeIn 0.5s ease-in-out;
 }
@@ -929,6 +1181,44 @@ form .excursion div {
   to {
     filter: blur(5px);
     opacity: 0;
+  }
+}
+/*page animation*/
+#first,
+#circuit,
+#reservation,
+#store,
+#island {
+  animation: top-anim 0.7s ease-in-out;
+}
+
+@keyframes top-anim {
+  from {
+    transform: translateX(-10%);
+    filter: blur(5px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+/*home animation*/
+#separation {
+  animation: left-apparition 0.8s ease-in-out;
+}
+
+@keyframes left-apparition {
+  from {
+    transform: translateX(-10%);
+    filter: blur(5px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    filter: blur(0px);
+    opacity: 1;
   }
 }
 footer {

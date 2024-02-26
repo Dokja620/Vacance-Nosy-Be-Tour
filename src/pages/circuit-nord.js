@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
 
 import tsingy from '../assets/imgs/circuit/Tsingy_Rouges_Madagascar.jpg';
 import mer from '../assets/imgs/circuit/mer-emeraude-diego-suarez-madagascar.jpg';
@@ -8,6 +9,17 @@ import hara from '../assets/imgs/circuit/nosy-hara.jpg';
 import cacao from '../assets/imgs/circuit/cacao.jpg';
 
 const Circuit = () => {
+    useEffect(() => {
+        const boites = document.querySelectorAll('.boite');
+
+        boites.forEach(boite => {
+            boite.addEventListener('click', () => {
+                const comeElement = document.getElementById('come');
+                comeElement.scrollIntoView({ behavior: "smooth" });
+            });
+        });
+    }, []);
+
     return ( 
         <section id="circuit">
             <h1>Circuit Nord</h1>
@@ -61,8 +73,9 @@ const Circuit = () => {
                     </div>
                 </div>
             </div>
+            <h2>120€ par personne</h2>
             <NavLink to='/reservation'>
-                <div className="reserve">
+                <div className="reserve" id="come">
                     Réserver
                 </div>
             </NavLink>

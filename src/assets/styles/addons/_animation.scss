@@ -1,4 +1,4 @@
-
+/*Poppup animation*/
 .popup {
   animation: fadeIn 0.5s ease-in-out;
     &.fade-out {
@@ -26,5 +26,46 @@
     to {
         filter: blur(5px);
         opacity: 0;
+    }
+}
+
+/*page animation*/
+//top pages
+#first,
+#circuit,
+#reservation,
+#store,
+#island
+{
+    animation: top-anim .7s ease-in-out;
+}
+
+@keyframes top-anim {
+    from{
+        transform: translateX(-10%);
+        filter: blur(5px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+/*home animation*/
+#separation{
+    animation: left-apparition .8s ease-in-out;    
+}
+@keyframes left-apparition {
+    from{
+        transform: translateX(-10%);
+        filter: blur(5px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0%);
+        filter: blur(0px);
+        opacity: 1;
     }
 }

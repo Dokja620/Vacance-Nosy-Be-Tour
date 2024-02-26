@@ -141,6 +141,9 @@
             box-shadow: rgba(255, 255, 255, 0.655) 0px 4px 0px;
             transition: .25s padding ease-in-out, .25s box-shadow ease-in-out .25s;
         }
+        .nav-link{
+            color: #2ac3f1b7;
+        }
     }
     .islog{
         width: 325px;
@@ -182,6 +185,7 @@
 
 #third{
     margin-top: 15%;
+    position: relative;
     h1{
         text-align: center;
         &.oo{
@@ -388,6 +392,14 @@
 
 #fourth{
     margin-top: 150px;
+    position: absolute;
+    bottom: 50px;
+    right: 35px;
+    width: 30vw;
+    background: #fff;
+    box-shadow: #000 0px 0px 10px;
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
     .about{
         display: flex;
         flex-wrap: wrap;
@@ -418,8 +430,7 @@
                 color: #2ac1f1;
             }
             p{
-                color: #fff;
-                text-shadow: #000 1px 1px 10px, #000 1px 1px 5px, #000 1px 1px 7px;
+                color: #2ac3f1b7;
             }
         }
     }

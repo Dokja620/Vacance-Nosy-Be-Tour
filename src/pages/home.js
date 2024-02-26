@@ -52,31 +52,31 @@ const Home = () => {
                         <div class="image">
                             <img src={komba} alt=""/>
                         </div>
-                        <p><NavLink to='/reservation'>Nosy Komba</NavLink></p>
+                        <p><NavLink to='/reservation' className="nav-link">Nosy Komba</NavLink></p>
                     </div>
                     <div class="island">
                         <div class="image">
                             <img src={tanikely} alt=""/>
                         </div>
-                        <p><NavLink to='/reservation'>Nosy Tanikely</NavLink></p>
+                        <p><NavLink to='/reservation' className="nav-link">Nosy Tanikely</NavLink></p>
                     </div>
                     <div class="island">
                         <div class="image">
                             <img src={iranja} alt=""/>
                         </div>
-                        <p><NavLink to='/reservation'>Nosy Iranja</NavLink></p>
+                        <p><NavLink to='/reservation' className="nav-link">Nosy Iranja</NavLink></p>
                     </div>
                     <div class="island">
                         <div class="image">
                             <img src={sakatia} alt=""/>
                         </div>
-                        <p><NavLink to='/reservation'>Nosy Sakatia</NavLink></p>
+                        <p><NavLink to='/reservation' className="nav-link">Nosy Sakatia</NavLink></p>
                     </div>
                     <div class="island">
                         <div class="image">
                             <img src={lokobe} alt=""/>
                         </div>
-                        <p><NavLink to='/reservation'>Lokobe</NavLink></p>
+                        <p><NavLink to='/reservation' className="nav-link">Lokobe</NavLink></p>
                     </div>
                     <div className="islog">
                         <div class="logo">
@@ -173,10 +173,7 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-            </section>
-
-            {/* Réservation */}
-            <section id="fourth">
+            <div id="fourth">
                 <div class="reservation">
                     <div class="about">
                         <div class="same depa">
@@ -199,7 +196,10 @@ const Home = () => {
                         <div class="reserve">réserver</div>
                     </NavLink>
                 </div>
+            </div>
             </section>
+
+            {/* Réservation */}
         </section>
      );
 }

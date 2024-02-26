@@ -29,7 +29,7 @@ const Store = () => {
                                 <p>Huile essentielle d'ylang-ylang</p>
                             </div>
                         </div>
-                        <p>15€ / 500G</p>
+                        <p>5€ / Tube</p>
                     </div>
                     <div className="buy"><p>Réserver</p></div>
                 </div>

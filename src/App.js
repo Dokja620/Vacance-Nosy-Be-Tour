@@ -7,6 +7,8 @@ import Home from './pages/home';
 import Circuit from './pages/circuit-nord';
 import Store from './pages/store';
 import Reservation from './pages/reservation';
+import Iles from './pages/islands';
+import Achat from './pages/buy';
 import './assets/styles/App.css';
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
             <Route path="/circuit-nord" element={<Circuit />} />
             <Route path="/boutique" element={<Store />} />
             <Route path="/reservation" element={<Reservation />} />
+            <Route path="/iles" element={<Iles />} />
+            <Route path="/achat" element={<Achat />} />
           </Routes>
         </main>
       <Footer></Footer>

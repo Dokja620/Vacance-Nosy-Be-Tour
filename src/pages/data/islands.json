@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Nosy Komba",
+    "description": "Nosy Komba est une île magnifique juste en face de Nosy Be. Son village pittoresque célèbre marché artisanal où l'on trouve des produits uniques comme des broderies et des sculptures en bois. En explorant l'île, on découvre une biodiversité fascinante avec des lémuriens macaco, des serpents constrictor, des caméléons et diverses tortues terrestres.",
+    "travel-duration": "02h30 avec un grand bateau rapide",
+    "schedule": "07h45 min à l'hôtel",
+    "price": "50",
+    "group-price": "45",
+    "included": [
+      "Transfert de l'hôtel vers le lieu d'embarquement",
+      "Déjeuner",
+      "boisson avec ou sans alcool",
+      "Guide"
+    ]
+  },
+  {
+    "name": "Nosy Tanikely",
+    "description": "Nosy Tanikely est une perle de l'océan Indien, une réserve marine qui éblouit par sa beauté naturelle préservée. Sa plage de sable blanc et son eau cristalline offrent un paradis aux amateurs de snorkeling et de plongée. Au sommet de l'île se dresse un phare historique, offrant une vue imprenable sur les îles environnantes de Nosy-Be, Nosy-Komba et Madagascar.",
+    "travel-duration": "02h30 avec un grand bateau rapide",
+    "schedule": "07h45 min à l'hôtel",
+    "price": "50",
+    "group-price": "45",
+    "included": [
+      "Transfert de l'hôtel vers le lieu d'embarquement",
+      "Déjeuner",
+      "boisson avec ou sans alcool",
+      "Guide"
+    ]
+  },
+  {
+    "name": "Nosy Iranja",
+    "description": "Nosy Iranja est une destination de rêve pour les amoureux de la nature, une île paradisiaque reliée par une bande de sable blanc de moins de 2 km. Ici, les visiteurs peuvent se détendre sur des plages immaculées, nager avec les tortues de mer et explorer les fonds marins spectaculaires. L'île est également réputée pour ses couchers de soleil inoubliables.",
+    "travel-duration": "01h20 avec un grand bateau rapide",
+    "schedule": "07h45 min à l'hôtel",
+    "price": "50",
+    "group-price": "45",
+    "included": [
+      "Transfert de l'hôtel vers le lieu d'embarquement",
+      "Déjeuner",
+      "boisson avec ou sans alcool",
+      "Guide"
+    ]
+  },
+  {
+    "name": "Nosy Sakatia",
+    "description": "Nichée dans l'océan Indien, Nosy Sakatia est une île enchanteresse réputée pour sa beauté naturelle préservée. Avec ses orchidées sauvages et sa baie abritant une multitude de tortues de mer, elle offre aux visiteurs une véritable oasis de tranquillité. Les amateurs de snorkeling apprécieront les eaux claires et la diversité marine exceptionnelle de cette île.",
+    "travel-duration": "01h20 avec un grand bateau rapide",
+    "schedule": "07h45 min à l'hôtel",
+    "price": "50",
+    "group-price": "45",
+    "included": [
+      "Transfert de l'hôtel vers le lieu d'embarquement",
+      "Déjeuner",
+      "boisson avec ou sans alcool",
+      "Guide",
+      "Équipement de Snorkeling"
+    ]
+  },
+  {
+    "name": "Lokobe",
+    "description": "La réserve Lokobe préserve la faune et la flore. Riche en animaux nocturnes et diurnes tels que les lémuriens, serpents, caméléons et grenouilles, nos aventures débutent par une balade en voiture jusqu'au village de pêcheurs d'Ambatozavavy, où nous prenons une pirogue traditionnelle pour traverser la baie. Ensuite, nous visitons Lokobe avant de déjeuner dans le village.",
+    "travel-duration": "01h20 avec un grand bateau rapide",
+    "schedule": "07h45 min à l'hôtel",
+    "price": "50",
+    "group-price": "45",
+    "included": [
+      "Transfert de l'hôtel vers le lieu d'embarquement",
+      "Déjeuner",
+      "boisson avec ou sans alcool",
+      "Guide"
+    ]
+  }
+]
