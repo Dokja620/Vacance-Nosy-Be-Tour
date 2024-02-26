@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import tsingy from '../assets/imgs/circuit/Tsingy_Rouges_Madagascar.jpg';
 import mer from '../assets/imgs/circuit/mer-emeraude-diego-suarez-madagascar.jpg';
 import ambre from '../assets/imgs/circuit/montagme-d-ambre.jpg';
@@ -59,9 +61,11 @@ const Circuit = () => {
                     </div>
                 </div>
             </div>
-            <div className="reserve">
-                Réserver
-            </div>
+            <NavLink to='/reservation'>
+                <div className="reserve">
+                    Réserver
+                </div>
+            </NavLink>
         </section>
      );
 }

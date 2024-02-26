@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import logo from '../assets/imgs/logo.jpg';
 
 //islands excursion images
@@ -51,31 +52,31 @@ const Home = () => {
                         <div class="image">
                             <img src={komba} alt=""/>
                         </div>
-                        <p>Nosy Komba</p>
+                        <p><NavLink to='/reservation'>Nosy Komba</NavLink></p>
                     </div>
                     <div class="island">
                         <div class="image">
                             <img src={tanikely} alt=""/>
                         </div>
-                        <p>Nosy Tanikely</p>
+                        <p><NavLink to='/reservation'>Nosy Tanikely</NavLink></p>
                     </div>
                     <div class="island">
                         <div class="image">
                             <img src={iranja} alt=""/>
                         </div>
-                        <p>Nosy Iranja</p>
+                        <p><NavLink to='/reservation'>Nosy Iranja</NavLink></p>
                     </div>
                     <div class="island">
                         <div class="image">
                             <img src={sakatia} alt=""/>
                         </div>
-                        <p>Nosy Sakatia</p>
+                        <p><NavLink to='/reservation'>Nosy Sakatia</NavLink></p>
                     </div>
                     <div class="island">
                         <div class="image">
                             <img src={lokobe} alt=""/>
                         </div>
-                        <p>Lokobe</p>
+                        <p><NavLink to='/reservation'>Lokobe</NavLink></p>
                     </div>
                     <div className="islog">
                         <div class="logo">
@@ -194,7 +195,9 @@ const Home = () => {
                                 03 personne min</p>
                         </div>
                     </div>
-                    <div class="reserve">réserver</div>
+                    <NavLink to='/reservation'>
+                        <div class="reserve">réserver</div>
+                    </NavLink>
                 </div>
             </section>
         </section>

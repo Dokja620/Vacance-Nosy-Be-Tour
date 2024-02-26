@@ -1,10 +1,124 @@
+#reservation{
+    margin: 75px 0 0 0;
+    padding: 0 15px;
+    h1{
+        text-align: center;
+        font-family: '80 peta';
+        font-size: 3em;
+    }
+}
 form{
     display: flex;
     flex-direction: column;
-    width: 50%;
     margin: 0 auto;
     font-family: 'oswald';
     font-size: 1em;
     background: #fff;
-    color: #000;
+    backdrop-filter: blur(2px);
+    box-shadow: #000 1px 2px 20px, #0000008f 1px 1px 10px;
+    color: #2ac1f1;
+    padding: 25px;
+    border-radius: 7px;
+    width: 50%;
+    h2{
+        margin: 15px 0 5px 0;
+    }
+    input, select{
+        font-family: 'montserrat';
+        padding: 1em;
+        line-height: 1.4;
+        background-color: #f9f9f9;
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        -webkit-transition: 0.35s ease-in-out;
+        -moz-transition: 0.35s ease-in-out;
+        -o-transition: 0.35s ease-in-out;
+        transition: 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+        margin: 10px 0;
+        &:focus {
+            outline: 0;
+            border-color: #2ac1f1;
+        }
+    }
+    input[type=submit]{
+        font-family: 'oswald';
+        font-size: 1.2em;
+        padding: 5px 0;
+        color: #2ac1f1;
+        cursor: pointer;
+        transition: .5s all ease-in-out;
+        &:hover{
+            color: #fff;
+            background-color: #2ac1f1;
+        }
+    }
+    .user-name{
+        input{
+            width: 100%;
+        }
+    }
+    .user-contact{
+        display: flex;
+        width: 100%;
+        gap: 10px;
+        div{
+            width: 50%;
+        }
+        input{
+            width: 100%;
+        }
+    }
+    .user-stay{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .excursion{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.popup{
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: #000 0px 0px 15px;
+    width: max-content;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    h2{
+        color: #2ac1f1;
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 1em;
+        color: #000;
+        text-shadow: none;
+    }
+    button{
+        font-family: 'montserrat';
+        color: #2ac1f1;
+        background: transparent;
+        border: 2px solid #000;
+        padding: .5em 1.2em;
+        border-radius: 25px;
+        margin: 10px 0;
+        cursor: pointer;
+    }
 }
