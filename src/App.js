@@ -15,21 +15,21 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Navbar></Navbar>
-      <section id="no-scroll">
-        <main>
-          <Routes>
-          <Route path="/" exact component={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/circuit-nord" element={<Circuit />} />
-            <Route path="/boutique" element={<Store />} />
-            <Route path="/reservation" element={<Reservation />} />
-            <Route path="/iles" element={<Iles />} />
-            <Route path="/achat" element={<Achat />} />
-          </Routes>
-        </main>
-      <Footer></Footer>
-      </section>
+        <Navbar />
+        <section id="no-scroll">
+          <main>
+            <Routes>
+              <Route path="/" element={<Navigate to="/Acceuil" />} />
+              <Route path="/Acceuil" element={<Home />} />
+              <Route path="/circuit-nord" element={<Circuit />} />
+              <Route path="/boutique" element={<Store />} />
+              <Route path="/reservation" element={<Reservation />} />
+              <Route path="/iles" element={<Iles />} />
+              <Route path="/achat" element={<Achat />} />
+            </Routes>
+          </main>
+          <Footer />
+        </section>
       </BrowserRouter>
     </div>
   );

@@ -284,8 +284,7 @@ nav ul li:hover::after {
   position: relative;
 }
 #second .island:hover > p {
-  padding: 0.7em 2em;
-  box-shadow: rgba(26, 26, 26, 0.655) 0px 4px 2px;
+  box-shadow: rgba(26, 26, 26, 0.5) 0px 4px 2px;
 }
 #second .island div {
   width: 325px;
@@ -311,6 +310,10 @@ nav ul li:hover::after {
   cursor: pointer;
   box-shadow: rgba(255, 255, 255, 0.655) 0px 4px 0px;
   transition: 0.25s padding ease-in-out, 0.25s box-shadow ease-in-out 0.25s;
+}
+#second .island p:hover {
+  padding: 0.7em 2em;
+  box-shadow: rgba(26, 26, 26, 0.655) 0px 4px 2px;
 }
 #second .island .nav-link {
   color: rgba(42, 195, 241, 0.7176470588);
@@ -1001,6 +1004,19 @@ form .validation div input[type=radio]::before {
 #island .switch {
   text-align: center;
 }
+#island .switch p {
+  font-family: "oswald";
+  color: #2ac1f1;
+  width: max-content;
+  margin: 0 auto;
+  padding: 0 100px;
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.4941176471), transparent);
+  backdrop-filter: blur(2px);
+  position: relative;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  text-shadow: #000 0px 0px 2px, #000 0px 0px 4px;
+}
 #island .switch button {
   font-family: "oswald";
   color: rgba(255, 255, 255, 0.9607843137);
@@ -1143,14 +1159,19 @@ form .validation div input[type=radio]::before {
 .trip .middle .booking {
   background: #fff;
   width: max-content;
-  padding: 1em 1.5em;
   border-radius: 25px;
   position: absolute;
   bottom: -20px;
   left: 50%;
+  padding: 1em 1.5em;
   transform: translateX(-50%);
   box-shadow: rgba(255, 255, 255, 0.4117647059) 0px 6px 0px;
   cursor: pointer;
+  transition: 0.25s padding ease-in-out 0.25s, 0.25s box-shadow ease-in-out;
+}
+.trip .middle .booking:hover {
+  padding: 1em 3em;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 5px, rgba(0, 0, 0, 0.4) 0px 2px 2px;
 }
 
 /*Poppup animation*/

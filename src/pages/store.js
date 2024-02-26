@@ -1,3 +1,6 @@
+import React from 'react';
+import { NavLink } from "react-router-dom";
+
 import vanille from '../assets/imgs/boutique/vanille.jpg';
 import vangovango from '../assets/imgs/boutique/vangovango.webp';
 import huile from '../assets/imgs/boutique/huile.webp';
@@ -18,12 +21,15 @@ const Store = () => {
                         </div>
                         <p>15€ / 500G</p>
                     </div>
-                    <div className="buy"><p>Réserver</p></div>
+                    <NavLink to='/achat'>
+                        <div className="buy"><p>Réserver</p></div>
+                    </NavLink>
                 </div>
 
                 <div id="article-2" className="product">
                     <div className="prix">
                         <div className="imgs">
+
                             <div className='gs'>
                                 <img src={huile} alt="" />
                                 <p>Huile essentielle d'ylang-ylang</p>
@@ -31,7 +37,9 @@ const Store = () => {
                         </div>
                         <p>5€ / Tube</p>
                     </div>
-                    <div className="buy"><p>Réserver</p></div>
+                    <NavLink to='/achat'>
+                        <div className="buy"><p>Réserver</p></div>
+                    </NavLink>
                 </div>
 
                 <div id="article-3" className="product">
@@ -44,7 +52,9 @@ const Store = () => {
                         </div>
                         <p>10€ à 40€</p>
                     </div>
-                    <div className="buy"><p>Réserver</p></div>
+                    <NavLink to='/achat'>
+                        <div className="buy"><p>Réserver</p></div>
+                    </NavLink>
                 </div>
             </div>
         </section>

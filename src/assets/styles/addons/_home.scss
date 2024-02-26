@@ -113,8 +113,7 @@
         margin: 25px 50px;
         position: relative;
         &:hover > p{
-            padding: .7em 2em;
-            box-shadow: rgba(26, 26, 26, 0.655) 0px 4px 2px;
+            box-shadow: rgba(26, 26, 26, 0.5) 0px 4px 2px;
         }
         div{
             width: 325px;
@@ -140,6 +139,10 @@
             cursor: pointer;
             box-shadow: rgba(255, 255, 255, 0.655) 0px 4px 0px;
             transition: .25s padding ease-in-out, .25s box-shadow ease-in-out .25s;
+            &:hover{
+                padding: .7em 2em;
+                box-shadow: rgba(26, 26, 26, 0.655) 0px 4px 2px;
+            }
         }
         .nav-link{
             color: #2ac3f1b7;

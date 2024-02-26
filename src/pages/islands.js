@@ -43,6 +43,7 @@ const Island = () => {
       <section id="island">
         {/* Buttons to switch between trips */}
         <div className="switch">
+          <p>Quelles îles souhaitez-vous visiter ?</p>
           {islandData.map((island, index) => (
             <button key={index} onClick={() => handleButtonClick(index)}>
               {island.name}
