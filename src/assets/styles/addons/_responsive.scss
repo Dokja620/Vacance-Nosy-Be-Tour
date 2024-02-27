@@ -1,0 +1,331 @@
+/*Navbar*/
+@media (max-width: 675px) {
+    nav{
+        z-index: 2;
+        .burger{
+            display: block;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 250px;
+            background: #0000001c;
+            box-shadow: #000 -4px 0px 15px;
+            backdrop-filter: blur(5px);
+            transform: translateX(110%);
+            transition: .25s all ease-in-out;
+            li{
+                margin: 0;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/*formulaire*/
+@media (max-width: 708px) {
+    form{
+        width: 90%;
+        min-width: 350px;
+    }
+}
+@media (max-width: 650px) {
+    #reservation{
+        h1{
+            font-size: 2.7em;
+        }
+    }
+    form{
+        .user-stay{
+            div{
+                width: 100%;
+            }
+        }
+        .excursion{
+            div{
+                width: 100%;
+            }
+        }
+    }
+    //footer icons
+    footer .reach-us .soc img{
+        height: 40px;
+    }
+}
+@media (max-width: 552px) {
+    #reservation{
+        h1{
+            font-size: 2.5em;
+        }
+    }
+    form{
+        width: 80%;
+        min-width: 300px;
+        .user-contact{
+            display: flex;
+            flex-direction: column;
+            div{
+                width: 100%;
+            }
+        }
+    }
+    //footer icons
+    footer .reach-us .soc img{
+        height: 35px;
+    }
+}
+@media (max-width: 470px) {
+    #reservation{
+        h1{
+            font-size: 2em;
+        }
+    }
+    form{
+        width: 100%;
+        h2{
+            min-width: max-content;
+            font-size: 1.4em;
+        }
+        .validation{
+            flex-direction: column;
+            &.top{
+                margin-bottom: 25px;
+
+            }
+            div{
+                height: 20px;
+            }
+        }
+    }
+    //footer icons
+    footer .reach-us .soc img{
+        height: 30px;
+    }
+}
+
+// circuit nord
+@media (max-width: 1148px) {
+    #circuit{
+        h2{
+            width: 80%;
+            margin: 0 auto;
+            padding: 0 25px;
+            text-shadow: #000 2px 2px 2px, #000 2px 2px 4px;
+        }
+        .places{
+            display: flex;
+            padding: 0 5%;
+            .boite{
+                width: 40%;
+                height: 250px;
+                img{
+                    min-height: 250px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 875px) {
+    #circuit{
+        .places{
+            .boite{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 708px) {
+    #circuit{
+        h2{
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 25px;
+            text-shadow: #000 2px 2px 2px, #000 2px 2px 4px;
+        }
+    }
+}
+
+// boutique
+@media (max-width: 1148px) {
+    #store{
+        h2{
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width: 708px) {
+    #store{
+        h1{
+            font-size: 3em;
+        }
+        h2{
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 25px;
+        }
+    }
+}
+@media (max-width: 470px) {
+    #store{
+        h1{
+            font-size: 2.4em;
+        }
+    }
+}
+
+//excursion
+@media (max-width: 1148px) {
+    
+    .trip{
+        flex-direction: column;
+        .left, .right{
+            min-width: 560px;
+            width: 50%;
+            margin: 0 auto;
+            .desc{
+                min-height: 100px;
+            }
+        }
+        .middle{
+            order: 1;
+        }
+    }
+}
+@media (max-width: 650px) {
+    #island{
+        .switch{
+            p{
+                font-family: 'oswald';
+                color: #2ac1f1;
+                width: fit-content;
+                margin: 0 auto 15px auto;
+                padding: 0;
+            }
+        }
+    }
+    .trip{
+        flex-direction: column;
+        .left, .right{
+            min-width: 100px;
+            width: 90%;
+            .desc{
+                min-height: 100px;
+            }
+        }
+        .right{
+            order: 3;
+            margin-top: 50px;
+        }
+        .left{
+            order: 2;
+        }
+        .middle{
+            .view{
+                min-width: 100px;
+                width: 90%;
+                margin: 0 auto;
+                height: 325px;
+                overflow: hidden;
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/*home*/
+@media (max-width: 1475px) {
+    #third{
+        .programme{
+            flex-direction: row;
+            margin: 25px;
+            transform: translateX(0);
+            .illustration{
+                .another{
+                    &.lemu,&.vil,&.arb,&.andi,&.mnt{
+                        position: static;
+                        transform: translateY(0);
+                    }
+                }
+                .contain{
+                    &.lemu,&.vil,&.arb,&.andi,&.mnt{
+                        width: 250px;
+                        height: 250px;
+                    }
+
+                }
+            }
+            .infos{
+                min-height: 160px;
+                &.lemu,&.vil,&.arb,&.andi,&.mnt{
+                    padding: 15px;
+                    margin: 0;
+                    width: 90%;
+                }
+            }
+        }
+    }
+    #fourth{
+        position: static;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+}
+@media (max-width: 850px) {
+    #second{
+        h2{
+            font-size: 1.1em;
+            padding: 0 15px;
+        }
+        .islog{
+            justify-content: center;
+            margin-top: 25px;
+        }
+    }
+    #third{
+        .programme{
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 675px) {
+    .acceuil{
+        width: 75vw;
+    }
+}
+@media (max-width: 552px) {
+    .acceuil{
+        width: 100vw;
+        padding: 25px;
+    }
+    .first{
+        .logo{
+            h2{
+                font-size: 2em;
+                &.vacances{
+                    top: 60%;
+                    left: 55%;
+                }
+                &.tour{
+                    top: 77%;
+                    left: 0%;
+                }
+            }
+            .container{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}
