@@ -1,19 +1,19 @@
 import { NavLink } from "react-router-dom";
-import logo from '../assets/imgs/logo.jpg';
+import logo from '../assets/imgs/logo.webp';
 
 //islands excursion images
 import arrow from '../assets/imgs/fleche-vers-le-bas.png';
-import iranja from '../assets/imgs/island/iranja.jpg';
-import komba from '../assets/imgs/island/komba.jpg';
-import lokobe from '../assets/imgs/island/lokobe.jpg';
-import sakatia from '../assets/imgs/island/sakatia.jpg';
-import tanikely from '../assets/imgs/island/tanikely.jpg';
+import iranja from '../assets/imgs/island/iranja.webp';
+import komba from '../assets/imgs/island/komba.webp';
+import lokobe from '../assets/imgs/island/lokobe.webp';
+import sakatia from '../assets/imgs/island/sakatia.webp';
+import tanikely from '../assets/imgs/island/tanikely.webp';
 //island tourimages
-import lemuria from '../assets/imgs/programme/lemuria.jpg';
-import hell from '../assets/imgs/programme/ville-1.jpg';
-import sacre from '../assets/imgs/programme/sacre.jpg';
-import andilana from '../assets/imgs/programme/andilana.jpg';
-import passot from '../assets/imgs/programme/passot.jpg';
+import lemuria from '../assets/imgs/programme/lemuria.webp';
+import hell from '../assets/imgs/programme/ville-1.webp';
+import sacre from '../assets/imgs/programme/sacre.webp';
+import andilana from '../assets/imgs/programme/andilana.webp';
+import passot from '../assets/imgs/programme/passot.webp';
 
 const Home = () => {
     return ( 

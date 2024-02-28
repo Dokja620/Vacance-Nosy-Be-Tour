@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 
-import vanille from '../assets/imgs/boutique/vanille.jpg';
+import vanille from '../assets/imgs/boutique/vanille.webp';
 import vangovango from '../assets/imgs/boutique/vangovango.webp';
 import huile from '../assets/imgs/boutique/huile.webp';
 

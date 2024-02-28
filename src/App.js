@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import Navbar from './pages/navbar';
 import Footer from './pages/footer';
@@ -13,8 +13,8 @@ import './assets/styles/App.css';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
+    <HashRouter>
+      <div className="App">
         <Navbar />
         <section id="no-scroll">
           <main>
@@ -30,8 +30,8 @@ function App() {
           </main>
           <Footer />
         </section>
-      </BrowserRouter>
-    </div>
+      </div>
+    </HashRouter>
   );
 }
 

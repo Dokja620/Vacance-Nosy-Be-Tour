@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
 
-import tsingy from '../assets/imgs/circuit/Tsingy_Rouges_Madagascar.jpg';
-import mer from '../assets/imgs/circuit/mer-emeraude-diego-suarez-madagascar.jpg';
-import ambre from '../assets/imgs/circuit/montagme-d-ambre.jpg';
-import parc from '../assets/imgs/circuit/Ankarana_three.jpg';
-import hara from '../assets/imgs/circuit/nosy-hara.jpg';
-import cacao from '../assets/imgs/circuit/cacao.jpg';
+import tsingy from '../assets/imgs/circuit/Tsingy_Rouges_Madagascar.webp';
+import mer from '../assets/imgs/circuit/mer-emeraude-diego-suarez-madagascar.webp';
+import ambre from '../assets/imgs/circuit/montagme-d-ambre.webp';
+import parc from '../assets/imgs/circuit/Ankarana_three.webp';
+import hara from '../assets/imgs/circuit/nosy-hara.webp';
+import cacao from '../assets/imgs/circuit/cacao.webp';
 
 const Circuit = () => {
     useEffect(() => {

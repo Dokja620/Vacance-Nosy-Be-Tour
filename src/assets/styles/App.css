@@ -17,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
-  background: #000 url(../imgs/bg-4.jpg) top left/cover no-repeat;
+  background: #000 url(../imgs/bg-4.webp) top left/cover no-repeat;
   background-attachment: fixed;
   color: #fff;
 }
@@ -37,22 +37,27 @@ body {
 @font-face {
   font-family: "80 peta";
   src: url(../fonts/Extenda-80-Peta-trial.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "hk";
   src: url(../fonts/Playlist-script.otf);
+  font-display: swap;
 }
 @font-face {
   font-family: "lato";
   src: url(../fonts/Lato-Black.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "oswald";
   src: url(../fonts/Oswald-Regular.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "montserrat";
   src: url(../fonts/Montserrat-Regular.ttf);
+  font-display: swap;
 }
 p {
   font-family: "montserrat";
