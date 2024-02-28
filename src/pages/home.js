@@ -18,14 +18,14 @@ import passot from '../assets/imgs/programme/passot.jpg';
 const Home = () => {
     return ( 
         <section id='home'>
-            {/* Page un excursion */}
+            {/* Page d'acceuil */}
             <section id="first">
                 <div class="first">
                     <div class="logo">
                         <h2 class="vacances">vacances</h2>
                         <h2 class="tour">nosy-be tour</h2>
                         <div class="container">
-                            <img src={logo} alt=""/>
+                            <img src={logo} alt="Vacances Nosy-be Tour"/>
                         </div>
                     </div>
                 </div>
@@ -38,9 +38,11 @@ const Home = () => {
 
             {/* Separation page */}
             <section id="separation">
-                <div className="arrow">
-                    <img src={arrow} alt="" />
-                </div>
+                <a href="#second">
+                    <div className="arrow">
+                            <img src={arrow} alt="" />
+                    </div>
+                </a>
             </section>
 
             {/* Separation page */}
@@ -50,40 +52,50 @@ const Home = () => {
                 <div class="choice">
                     <div class="island">
                         <div class="image">
-                            <img src={komba} alt=""/>
+                            <img src={komba} alt="Nosy Komba"/>
                         </div>
-                        <p><NavLink to='/reservation' className="nav-link">Nosy Komba</NavLink></p>
+                        <NavLink to='/excursion' className="nav-link">
+                        <p>Nosy Komba</p>
+                        </NavLink>
                     </div>
                     <div class="island">
                         <div class="image">
-                            <img src={tanikely} alt=""/>
+                            <img src={tanikely} alt="Nosy Tanikely"/>
                         </div>
-                        <p><NavLink to='/reservation' className="nav-link">Nosy Tanikely</NavLink></p>
+                        <NavLink to='/excursion' className="nav-link">
+                        <p>Nosy Tanikely</p>
+                        </NavLink>
                     </div>
                     <div class="island">
                         <div class="image">
-                            <img src={iranja} alt=""/>
+                            <img src={iranja} alt="Nosy Iranja"/>
                         </div>
-                        <p><NavLink to='/reservation' className="nav-link">Nosy Iranja</NavLink></p>
+                        <NavLink to='/excursion' className="nav-link">
+                        <p>Nosy Iranja</p>
+                        </NavLink>
                     </div>
                     <div class="island">
                         <div class="image">
-                            <img src={sakatia} alt=""/>
+                            <img src={sakatia} alt="Nosy Sakatia"/>
                         </div>
-                        <p><NavLink to='/reservation' className="nav-link">Nosy Sakatia</NavLink></p>
+                        <NavLink to='/excursion' className="nav-link">
+                        <p>Nosy Sakatia</p>
+                        </NavLink>
                     </div>
                     <div class="island">
                         <div class="image">
-                            <img src={lokobe} alt=""/>
+                            <img src={lokobe} alt="Lokobe"/>
                         </div>
-                        <p><NavLink to='/reservation' className="nav-link">Lokobe</NavLink></p>
+                        <NavLink to='/excursion' className="nav-link">
+                        <p>Lokobe</p>
+                        </NavLink>
                     </div>
                     <div className="islog">
                         <div class="logo">
                             <h2 class="vacances">vacances</h2>
                             <h2 class="tour">nosy-be tour</h2>
                             <div class="container">
-                                <img src={logo} alt=""/>
+                                <img src={logo} alt="Vacances Nosy-Be Tour"/>
                             </div>
                         </div>
                     </div>
@@ -98,7 +110,7 @@ const Home = () => {
                     <div class="illustration">
                         <div class="another lemu">
                             <div class="contain lemu">
-                                <img src={lemuria} alt=""/>
+                                <img src={lemuria} alt="Lemuria land"/>
                             </div>
                             <h1>Lemuria <br/> land</h1>
                         </div>
@@ -115,7 +127,7 @@ const Home = () => {
                     <div class="illustration">
                         <div class="another vil">
                             <div class="contain vil">
-                                <img src={hell} alt=""/>
+                                <img src={hell} alt="Hell-ville"/>
                             </div>
                             <h1>Hell-ville</h1>
                         </div>
@@ -132,7 +144,7 @@ const Home = () => {
                     <div class="illustration">
                         <div class="another arb">
                             <div class="contain arb">
-                                <img src={sacre} alt=""/>
+                                <img src={sacre} alt="Arbre sacré"/>
                             </div>
                             <h1>Arbre sacré</h1>
                         </div>
@@ -147,7 +159,7 @@ const Home = () => {
                     <div class="illustration">
                         <div class="another andi">
                             <div class="contain andi">
-                                <img src={andilana} alt=""/>
+                                <img src={andilana} alt="Andilana"/>
                             </div>
                             <h1>Andilana</h1>
                         </div>
@@ -162,7 +174,7 @@ const Home = () => {
                     <div class="illustration">
                         <div class="another mnt">
                             <div class="contain mnt">
-                                <img src={passot} alt=""/>
+                                <img src={passot} alt="Mont passot"/>
                             </div>
                             <h1>Mont Passot</h1>
                         </div>

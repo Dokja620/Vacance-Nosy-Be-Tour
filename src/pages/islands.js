@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import islandData from './data/islands.json';
+import { NavLink } from "react-router-dom";
 
 // Import your images here
 import img1 from './data/imgs/komba/komba-1.jpg';
@@ -68,13 +69,15 @@ const Island = () => {
             <div className="middle">
               <h3>{islandData[currentIndex].name} ?</h3>
               <div className="view">
-                <img src={currentImage} alt={`View of ${islandData[currentIndex].name}`} />
+                <img src={currentImage} alt={`${islandData[currentIndex].name}`} />
               </div>
-              <div className="arrow lft"><img src="../imgs/arrow.svg" alt="" /></div>
-              <div className="arrow rgt"><img src="../imgs/arrow.svg" alt="" /></div>
-              <div className="booking">
-                <p>réserver une excursion</p>
-              </div>
+              {/* <div className="arrow lft"><img src="../imgs/arrow.svg" alt="" /></div>
+              <div className="arrow rgt"><img src="../imgs/arrow.svg" alt="" /></div> */}
+                <NavLink to='/reservation' className='menu-link'>
+                  <div className="booking">
+                    <p>réserver une excursion</p>
+                  </div>
+                </NavLink>
             </div>
             <div className="right">
               <div className="box">

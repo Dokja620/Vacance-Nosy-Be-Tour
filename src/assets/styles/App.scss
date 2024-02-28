@@ -19,7 +19,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 16px;
-    background: #2ac1f1 url(../imgs/bg-4.jpg) top left/cover no-repeat;
+    background: #000 url(../imgs/bg-4.jpg) top left/cover no-repeat;
     background-attachment: fixed;
     color: #fff;
 }
@@ -87,3 +87,4 @@ h1,h2,a,p{
 @import "addons/excursion";
 @import "addons/animation";
 @import "addons/footer";
+@import "addons/responsive";

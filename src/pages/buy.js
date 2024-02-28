@@ -114,7 +114,7 @@ const ContactUs = () => {
         </span>
         <h2>Paiement</h2>
         <label>moyen de paiement</label>
-        <span className='validation'>
+        <span className='validation top'>
           <div>
             <input type="radio" name="paymentMethod" id="cash" checked={paymentMethod === 'cash'} onChange={() => handlePaymentChange('cash')} />
             <label htmlFor="cash">Sur Place</label>

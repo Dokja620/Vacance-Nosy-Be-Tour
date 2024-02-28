@@ -29,7 +29,7 @@ const Circuit = () => {
                     <h3>Tsingy rouge</h3>
                     <div className="filter"></div>
                     <div>
-                        <img src={tsingy} alt="" />
+                        <img src={tsingy} alt="tsingy rouge" />
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@ const Circuit = () => {
                     <h3>mer d'émeraude</h3>
                     <div className="filter"></div>
                     <div>
-                        <img src={mer} alt="" />
+                        <img src={mer} alt="mer d'émeraude" />
                     </div>
                 </div>
                 
@@ -45,7 +45,7 @@ const Circuit = () => {
                     <h3>montagne d'ambre</h3>
                     <div className="filter"></div>
                     <div>
-                        <img src={ambre} alt="" />
+                        <img src={ambre} alt="montagne d'ambre" />
                     </div>
                 </div>
 
@@ -53,7 +53,7 @@ const Circuit = () => {
                     <h3>Parc Ankarana</h3>
                     <div className="filter"></div>
                     <div>
-                        <img src={parc} alt="" />
+                        <img src={parc} alt="Parc Ankarana" />
                     </div>
                 </div>
 
@@ -61,7 +61,7 @@ const Circuit = () => {
                     <h3>Nosy Hara</h3>
                     <div className="filter"></div>
                     <div>
-                        <img src={hara} alt="" />
+                        <img src={hara} alt="Nosy Hara" />
                     </div>
                 </div>
 
@@ -69,7 +69,7 @@ const Circuit = () => {
                     <h3>Plantation cacao</h3>
                     <div className="filter"></div>
                     <div>
-                        <img src={cacao} alt="" />
+                        <img src={cacao} alt="Plantation cacao" />
                     </div>
                 </div>
             </div>

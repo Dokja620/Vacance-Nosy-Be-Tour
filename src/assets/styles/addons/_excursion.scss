@@ -136,6 +136,7 @@
             transform: translateX(-50%);
         }
         .view{
+            min-width: 550px;
             width: 40vw;
             height: 325px;
             border-radius: 25px;
@@ -143,7 +144,7 @@
             overflow: hidden;
             img{
                 min-height: 100%;
-                width: 40vw;
+                width: 100%;
             }
         }
         .arrow{

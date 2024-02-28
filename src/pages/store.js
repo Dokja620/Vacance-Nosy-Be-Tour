@@ -15,7 +15,7 @@ const Store = () => {
                     <div className="prix">
                         <div className="imgs">
                             <div className='gs van'>
-                                <img src={vanille} alt=""/>
+                                <img src={vanille} alt="Vanille"/>
                                 <p>Vanille de bonne qualité</p>
                             </div>
                         </div>
@@ -31,7 +31,7 @@ const Store = () => {
                         <div className="imgs">
 
                             <div className='gs'>
-                                <img src={huile} alt="" />
+                                <img src={huile} alt="ylang-ylang" />
                                 <p>Huile essentielle d'ylang-ylang</p>
                             </div>
                         </div>
@@ -46,7 +46,7 @@ const Store = () => {
                     <div className="prix">
                         <div className="imgs">
                             <div className='gs'>
-                                <img src={vangovango} alt="" />
+                                <img src={vangovango} alt="Bracelet" />
                                 <p>Bracelet en argent</p>
                             </div>
                         </div>

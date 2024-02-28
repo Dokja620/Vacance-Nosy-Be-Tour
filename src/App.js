@@ -24,7 +24,7 @@ function App() {
               <Route path="/circuit-nord" element={<Circuit />} />
               <Route path="/boutique" element={<Store />} />
               <Route path="/reservation" element={<Reservation />} />
-              <Route path="/iles" element={<Iles />} />
+              <Route path="/excursion" element={<Iles />} />
               <Route path="/achat" element={<Achat />} />
             </Routes>
           </main>
