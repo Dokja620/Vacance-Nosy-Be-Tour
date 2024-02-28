@@ -1524,11 +1524,11 @@ footer .made span:hover::before {
     min-height: 100px;
   }
   .trip .right {
-    order: 2;
+    order: 3;
     margin-top: 50px;
   }
   .trip .left {
-    order: 3;
+    order: 2;
   }
   .trip .middle .view {
     min-width: 100px;

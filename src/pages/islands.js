@@ -3,10 +3,10 @@ import islandData from './data/islands.json';
 import { NavLink } from "react-router-dom";
 
 // Import your images here
-import img1 from './data/imgs/komba/komba-1.jpg';
-import img2 from './data/imgs/tanikely/tanikely-1.jpg';
-import img3 from './data/imgs/iranja/iranja-1.jpg';
-import img4 from './data/imgs/sakatia/sakatia-1.jpg';
+import img1 from './data/imgs/komba/komba-7.jpg';
+import img2 from './data/imgs/tanikely/tanikely-8.jpg';
+import img3 from './data/imgs/iranja/iranja-7.jpg';
+import img4 from './data/imgs/sakatia/sakatia-7.jpg';
 import img5 from './data/imgs/lokobe/lokobe-1.jpg';
 import check from '../assets/imgs/check.svg';
 
