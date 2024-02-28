@@ -16,11 +16,4 @@
     <div id="root"></div>
     <!-- Your React application will be injected here -->
   </body>
-  <script>
-    // Check if the current URL contains a hash fragment
-    if (window.location.hash && window.location.hash !== '#/') {
-      // Redirect to the URL without the hash fragment
-      window.location.href = window.location.href.replace('#', '');
-    }
-  </script>
 </html>

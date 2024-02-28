@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://vacance-nosy-be-tour.com/#/Acceuil</loc>
+      <lastmod>2024-02-27</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
+   <url>
+      <loc>https://vacance-nosy-be-tour.com/#/excursion</loc>
+      <lastmod>2024-02-27</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
+   <url>
+      <loc>https://vacance-nosy-be-tour.com/#/circuit-nord</loc>
+      <lastmod>2024-02-27</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
+   <url>
+      <loc>https://vacance-nosy-be-tour.com/#/reservation</loc>
+      <lastmod>2024-02-27</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
+   <url>
+      <loc>https://vacance-nosy-be-tour.com/#/boutique</loc>
+      <lastmod>2024-02-27</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
+   <url>
+      <loc>https://vacance-nosy-be-tour.com/#/achat</loc>
+      <lastmod>2024-02-27</lastmod>
+      <changefreq>monthly</changefreq>
+   </url>
+</urlset>
