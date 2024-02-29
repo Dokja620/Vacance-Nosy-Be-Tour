@@ -152,3 +152,61 @@ body {
 document.querySelector('.hamburger').addEventListener('click', (e) => {
     e.currentTarget.classList.toggle('is-active');
 })
+
+<p>Bonjour, une réservation vient d'être soumise;</p>
+<p>
+  <strong>Les informations du client:</strong><br>
+  Noms: {{client_last_name}}<br>
+  Prénoms: {{client_first_name}}<br>
+  Email: {{client_email}}<br>
+  Numéros: {{client_phone}}<br>
+</p>
+<p>
+  <strong>Votre séjour:</strong><br>
+  Date d'arrivée: {{arrival_date}}<br>
+  Date de départ: {{departure_date}}<br>
+  Hôtel: {{client_hotel}}<br>
+</p>
+<p>
+  <strong>L'excursion:</strong><br>
+  Nombres de personnes: {{number_of_client}}<br>
+  Îles à visiter: {{island_choice}}<br>
+  Prix: {{trip_price}}<br>
+</p>
+<p>
+  Un mail contenant les instructions sur le paiement lui a été envoyé.
+</p>
+
+<p>Bonjour, un achat vient d'être soumise;</p>
+<p>
+  <strong>Les informations du client:</strong><br>
+  Noms: {{client_last_name}}<br>
+  Prénoms: {{client_first_name}}<br>
+  Email: {{client_email}}<br>
+  Numéros: {{client_phone}}<br>
+</p>
+<p>
+  <strong>Details de l'achat:</strong><br>
+  Nombre d'article: {{number_of_product}}<br>
+  Nom de l'article: {{island_choice}}<br>
+  Prix unitaire: {{price}}<br>
+  Total: {{total_price}}<br>
+</p>
+<p>
+  <strong>Moyen de paiment:</strong><br>
+  {{paymentMethod}}<br>
+</p>
+<p>
+  <strong>Récuperation de l'article:</strong><br>
+  {{deliveryOption}}<br>
+</p>
+<p>
+  Un mail contenant les instructions sur le paiement lui a été envoyé.
+</p>
+
+<p>Merci {{client_first_name}},</p>
+<p>Nosy-Be Tour a re&ccedil;u votre r&eacute;servation.</p>
+<p>Pour proc&eacute;der au payement, veuillez nous envoyer via cet adresse e-mail le num&eacute;ro le le nom de carte bancaire.</p>
+<p>Le payement du montant : {{prix}}euro, Sera fait au nom de : <strong>Victor Christophe</strong>, par mobile Money sur le num&eacute;ro: <strong>+261 32 00 111 22</strong></p>
+<p>Apr&egrave;s la r&eacute;ception du payement, un e-mail confirmation de votre r&eacute;servation vous sera envoy&eacute;.</p>
+<p>Nous tenons a rappeler que ceci est fait Afin d'assurer la confidence de vos informations.</p>

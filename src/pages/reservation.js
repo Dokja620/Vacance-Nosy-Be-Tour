@@ -11,9 +11,9 @@ const ContactUs = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_0b6kg78', 'template_21q20uk', form.current, {
-        publicKey: 'uzZPcXhAKZZ3GQpzM',
-      })
+    .sendForm('service_ow4y3im', 'template_jaci92l', form.current, {
+      publicKey: 'ftcjiH_UazmGRSD3Q',
+    })
       .then(
         () => {
           console.log('SUCCESS!');

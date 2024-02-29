@@ -16,8 +16,8 @@ const ContactUs = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_0b6kg78', 'template_pamsseo', form.current, {
-        publicKey: 'uzZPcXhAKZZ3GQpzM',
+      .sendForm('service_ow4y3im', 'template_ahf35vs', form.current, {
+        publicKey: 'ftcjiH_UazmGRSD3Q',
       })
       .then(
         () => {
@@ -96,9 +96,9 @@ const ContactUs = () => {
             <label>Articles:</label>
             <select name="island_choice" id="islands" required onChange={handleProductChange}>
               <option value="">Faites votre choix</option>
-              <option value="product1">VANILLE DE BONNE QUALITÉ</option>
-              <option value="product2">HUILE ESSENTIELLE D'YLANG-YLANG</option>
-              <option value="product3">BRACELET EN ARGENT</option>
+              <option value="vanille">VANILLE DE BONNE QUALITÉ</option>
+              <option value="huile d'ylang-ylang">HUILE ESSENTIELLE D'YLANG-YLANG</option>
+              <option value="Bracelet en argent">BRACELET EN ARGENT</option>
             </select>
           </div>
           <span className='prixx'>
