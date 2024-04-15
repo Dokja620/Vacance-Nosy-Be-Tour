@@ -16,14 +16,12 @@ import andilana from '../assets/imgs/programme/andilana.webp';
 import passot from '../assets/imgs/programme/passot.webp';
 
 const Home = () => {
-    function scrollFunction() {
-        window.scrollBy({
-            top: 0,
-            left: 250,
-            behavior: 'smooth'
-        });
-    }
-
+    const scrollToSecond = () => {
+        const secondSection = document.getElementById('second');
+        if (secondSection) {
+            secondSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return ( 
         <section id='home'>
@@ -47,8 +45,8 @@ const Home = () => {
 
             {/* Separation page */}
             <section id="separation">
-                <div className="arrow" onClick={scrollFunction()}>
-                        <img src={arrow} alt="" />
+                <div className="arrow">
+                    <img src={arrow} alt="" onClick={scrollToSecond} />
                 </div>
             </section>
 

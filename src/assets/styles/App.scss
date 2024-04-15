@@ -66,6 +66,7 @@ body {
 p{
     font-family: 'montserrat';
     font-size: 1.2em;
+    font-weight: 800;
 }
 li{
     font-family: 'oswald';
@@ -74,11 +75,15 @@ li{
 h1{
     font-family: 'lato';
     letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #000000b9, 2px 2px 8px #00000095;
 }
 h2{
     font-family: 'montserrat';
+    text-shadow: 2px 2px 2px #000, 2px 2px 6px #0000007b;
+    text-transform: uppercase;
 }
-h1,h2,a,p{
+a,p{
     text-shadow: #000 1px 1px 2px;
     text-transform: uppercase;
 }
